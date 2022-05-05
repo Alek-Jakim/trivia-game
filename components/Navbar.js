@@ -40,6 +40,7 @@ const Navbar = () => {
                     {userProfile &&
                         <>
                             <Link href="/game/setup"><a className={styles["nav-link"]}>New Game</a></Link>
+                            <Link href={`/player/${userProfile.id}`}><a className={styles["nav-link"]}>Dashboard</a></Link>
                             <Link href="/"><a onClick={logout} className={styles["nav-link"]}>Log Out</a></Link>
 
                             <p className={styles["nav-user"]}><FaUserGraduate className={styles["nav-user-icon"]} />&nbsp; {userProfile.username}</p>

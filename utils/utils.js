@@ -13,3 +13,38 @@ export const capitalize = (str) => {
 
     return firstLetter + str.substring(1);
 }
+
+export const checkToken = (token, decode, logout) => {
+    if (token) {
+        let decodedToken = decode(token);
+
+        if (decodedToken?.exp * 1000 < new Date().getTime()) {
+            valid = false;
+            logout();
+        }
+    }
+}
+
+export const checkValidToken = (token, decode) => {
+    let valid;
+
+    if (!token) {
+        valid = false;
+    }
+
+    let decodedToken = decode(token);
+    if (decodedToken?.exp * 1000 < new Date().getTime()) {
+        valid = false;
+    }
+
+    return valid;
+}
+
+export const categoryMap = {
+    generalKnowledge: 9,
+    computerScience: 18,
+    sports: 21,
+    animals: 27,
+    mythology: 20,
+    history: 23
+};

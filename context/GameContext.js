@@ -27,13 +27,12 @@ export const GameProvider = ({ children }) => {
         });
 
 
-        console.log(response)
 
         if (response.ok) {
             let data = await response.json();
 
             setUserProfile(data);
-            router.push("/player/dashboard");
+            router.push(`/player/${data.id}`);
         } else {
             setUserProfile(null);
         }
@@ -53,7 +52,8 @@ export const GameProvider = ({ children }) => {
         if (response.ok) {
             const data = await response.json();
             setUserProfile(data);
-            router.push("/player/dashboard");
+            console.log(data)
+            // router.push(`/player/${data.id}`);
         } else {
             setUserProfile(null);
         }

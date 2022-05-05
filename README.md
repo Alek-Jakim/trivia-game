@@ -1,8 +1,10 @@
 # Trivia Game
 
-1. API used: https://opentdb.com/api_config.php 
+A trivia quiz game app where you can setup the type, number & difficulty of the questions and see how you match up against other users
 
-First, run the development server:
+API used: https://opentdb.com/api_config.php 
+
+Run the development server:
 
 ```bash
 # http://localhost:3000
