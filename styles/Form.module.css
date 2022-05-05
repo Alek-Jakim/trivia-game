@@ -1,0 +1,67 @@
+.f,
+.f-container,
+.f-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f {
+    height: 100vh;
+    width: 100%;
+}
+
+.f-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.f-form {
+    width: 60%;
+}
+
+.f-header {
+    font-size: 2rem;
+    text-align: left;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.f-icon {
+    margin-right: 15px;
+    font-size: 2.3rem;
+}
+
+.f-i-field {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 10px auto;
+}
+
+.f-i-btn {
+    width: 100%;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--main-purple);
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.f-bottom {
+    margin-top: 15px;
+    font-size: 1.3rem;
+
+}
